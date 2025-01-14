@@ -1,7 +1,7 @@
 # how to set up Qt on WSL
 
 ## step 1:
-### install WSL (single PowerShell command)
+install WSL (single PowerShell command)
 run this and go through the install process
 ```PowerShell
   wsl --install
@@ -10,7 +10,7 @@ run this and go through the install process
 reasonable defaults - more info at [https://learn.microsoft.com/en-us/windows/wsl/install]
 
 ## step 2:
-### restart your computer
+restart your computer
 
 ## step 3:
 ### test if visual apps are working:
@@ -20,7 +20,7 @@ xeyes
 ```
 
 ## step 4
-### install Qt:
+install Qt:
 this is an excerpt from my terminal history, after that qt was working
 
 not quite sure what happened here
@@ -33,7 +33,9 @@ sudo apt install qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools
 ```
 
 ## step 5
-### try running a simple Qt App:
+try running a simple Qt App:
+
+CMakeLists.txt
 ```cmake
 cmake_minimum_required(VERSION 3.22)
 project(Pacman)
@@ -60,6 +62,7 @@ target_link_libraries(Pacman
 )
 ```
 
+main.cpp
 ```c++
 // main.cpp
 #include <QApplication>

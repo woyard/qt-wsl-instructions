@@ -15,6 +15,7 @@ restart your computer
 ## step 3:
 ### test if visual apps are working:
 (should spawn a pair of eyes on your screen)
+(I'm not sure if this comes preinstalled now)
 ```bash
 xeyes
 ```

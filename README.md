@@ -2,6 +2,7 @@
 
 ## step 1:
 install WSL (single PowerShell command)
+
 run this and go through the install process
 ```PowerShell
   wsl --install
@@ -13,10 +14,15 @@ reasonable defaults - more info at [https://learn.microsoft.com/en-us/windows/ws
 restart your computer
 
 ## step 3:
+### open your newly installed WSL:
+open powershell -> the tab island on top -> the dropdown -> select Ubuntu
+![obraz](https://github.com/user-attachments/assets/998393dc-242b-48e5-b4f6-ec3e59a7bdd3)
+
 ### test if visual apps are working:
 (should spawn a pair of eyes on your screen)
-(I'm not sure if this comes preinstalled now)
+(I'm not sure if this comes preinstalled now, might need to install x11apps)
 ```bash
+apt-get install x11-apps
 xeyes
 ```
 
@@ -31,6 +37,11 @@ sudo apt update
 sudo apt install qt5-default
 sudo apt-mark manual qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools
 sudo apt install qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools
+```
+install a c++ compiler & cmake
+```bash
+sudo apt install g++
+sudo apt install cmake
 ```
 
 ## step 5
@@ -75,8 +86,16 @@ int main(int argc, char *argv[]) {
     QGraphicsScene *scene = new QGraphicsScene();
     scene->setBackgroundBrush(Qt::magenta);
     QGraphicsView* view = new QGraphicsView(scene);
-    m_view->setFixedSize(600, 600);
+    view->setFixedSize(600, 600);
     view->show();
     return a.exec();
 }
 ```
+
+compile & run
+```bash
+cmake .
+make
+./Pacmann
+```
+

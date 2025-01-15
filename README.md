@@ -16,7 +16,8 @@ restart your computer
 ## step 3:
 ### open your newly installed WSL:
 open powershell -> the tab island on top -> the dropdown -> select Ubuntu
-![obraz](https://github.com/user-attachments/assets/998393dc-242b-48e5-b4f6-ec3e59a7bdd3)
+![wsl ubuntu terminal location](https://github.com/user-attachments/assets/9bcf08f6-a2ed-4f5f-b5db-bb08fb4662d8)
+
 
 ### test if visual apps are working:
 (should spawn a pair of eyes on your screen)

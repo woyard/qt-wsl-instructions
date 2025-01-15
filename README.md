@@ -18,7 +18,10 @@ restart your computer
 open powershell -> the tab island on top -> the dropdown -> select Ubuntu
 ![wsl ubuntu terminal location](https://github.com/user-attachments/assets/9bcf08f6-a2ed-4f5f-b5db-bb08fb4662d8)
 
+### configure username and password for ubuntu
+yeah do that
 
+## step 3.5 (optional)
 ### test if visual apps are working:
 (should spawn a pair of eyes on your screen)
 (I'm not sure if this comes preinstalled now, might need to install x11apps)
@@ -28,6 +31,13 @@ xeyes
 ```
 
 ## step 4
+install a c++ compiler & cmake
+```bash
+sudo apt install g++
+sudo apt install cmake
+```
+
+## step 5
 install Qt:
 this is an excerpt from my terminal history, after that qt was working
 
@@ -39,13 +49,8 @@ sudo apt install qt5-default
 sudo apt-mark manual qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools
 sudo apt install qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools
 ```
-install a c++ compiler & cmake
-```bash
-sudo apt install g++
-sudo apt install cmake
-```
 
-## step 5
+## step 6
 try running a simple Qt App:
 
 CMakeLists.txt
@@ -97,6 +102,6 @@ compile & run
 ```bash
 cmake .
 make
-./Pacmann
+./Pacman
 ```
 
